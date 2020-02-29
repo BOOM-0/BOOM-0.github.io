@@ -1,138 +1,98 @@
 <html>
 <head>
 <title>优秀的赵祎博，嘻嘻</title>
-<style type="text/css">
-/*第一个整体页面*/
-#first{
-     width: 100%;
-     height: 1000px;
-}
-#hei{
-     width: 20%;
-     height: 1000px;
-     background-color:slategray;
-     float: left;
-}
-#bai{
-     width: 80%;
-     height: 1000px;
-     float: left;
-     background-image: url(beijing.jpg);
-     background-size: 100% 100%;
-}
-/*欧阳娜娜图片*/
-#zhaopian{
-     width: 400px;
-     height: 600px;
-     position: absolute;
-     left: 250px;
-     top: 225px;
-}
-/*可爱的小诗歌*/
-#xiaoshige{
-     width: 250px;
-     height: 600px;
-     position: absolute;
-     left: 70px;
-     top: 55px;
-     overflow:hidden;
-}
-.inner {
-	width:750px;
-	position:relative;
-	animation:zyb 15s linear 0s infinite;
-}
-@keyframes zyb {
-0% {
-	transform:translateX(0px);
-}
-30%{
-     transform:translateX(0px);
-}
-35% {
-	transform:translateX(-250px);
-}
-65% {
-	transform:translateX(-250px);
-}
-70% {
-	transform:translateX(-500px);
-}
-96% {
-	transform:translateX(-500px);
-}
-100%{
-     transform:translateX(0px);
-}
-}
-.inner:hover {
-	animation-play-state:paused;
-	cursor:pointer;
-}
-.innerwrapper {
-	float:left;
-	width:250px;
-}
-</style>
+<link rel="stylesheet" href="css/sidebar.css" type="text/css">
 </head>
 <body>
-     <div id="first">
-          <div id="hei"></div>
+     <div id="wrapper" style="left:0px;">
+        <!-- 左侧边菜单栏 -->
+          <div class="sidebar">
+               <div class="headSculpture">
+                  <img src="images/headSculpture.jpg">
+                  <p>昵称：可爱娜娜</p>
+               </div>
+               <div class="option">
+                  <ul>
+                     <li><img src="images/home.png">
+                        <p>首页</p>
+                     </li>
+                     <li><img src="images/works.png">
+                        <p>我的作品</p>
+                     </li>
+                     <li><img src="images/release.png">
+                        <p>发布作品</p>
+                     </li>
+                     <li><img src="images/collection.png">
+                        <p>我的收藏</p>
+                     </li>
+                     <li><img src="images/setup.png">
+                        <p>设置</p>
+                     </li>
+                  </ul>
+               </div>
+          </div>
+        <!-- 左侧边菜单按钮 -->
+          <button></button>
+          <script src="js/jquery.min.js"></script>
+          <script src="js/sidebar.js"></script>
+        <!-- 右侧边小诗歌 -->  
+          <div id="hei">
+               <div id="xiaoshige">
+                    <div class="inner">
+                        <div class="innerwrapper" style="font-size:large">
+                         <P>我吃了</P>
+                         <P>放在</P>
+                         <p>冰箱里的</p>
+                         <P>梅子</P>
+                         <p>它们</p>
+                         <P>大概是你</P>
+                         <p>留着早餐</p>
+                         <p>吃的</p>
+                         <p>请原谅</p>
+                         <p>它们</p>
+                         <p>实在是</p>
+                         <p>太可口了</p>
+                         <p>那么凉</p>
+                         <p>又那么甜</p>
+                        </div>
+                        <div class="innerwrapper" style="font-size:large">
+                         <P>她</P>
+                         <P>这么美</P>
+                         <p>这么一尘不染</p>
+                         <P>她站在你面前</P>
+                         <p>就像白云</p>
+                         <P>在天空里</P>
+                         <p>就像树叶</p>
+                         <p>在阳光里</p>
+                         <p>这么玲珑</p>
+                         <p>这么剔透</p>
+                         <p>你很难想象</p>
+                         <p>她这么可爱</p>
+                         <p>也不喜欢吃菠菜</p>
+                        </div>
+                        <div class="innerwrapper" style="font-size:large">
+                         <P>我把手机里的</p>
+                         <p>图片给姥姥看</P>
+                         <P>奥黛丽•赫本在非洲</P>
+                         <p>背着一个</p>
+                         <p>瘦如骷髅的男孩</p>
+                         <P>我告诉姥姥说</P>
+                         <p>要拥有苗条的身材</p>
+                         <P>就要把食物</p>
+                         <p>分给饥饿的人</P>
+                         <p>姥姥郑重其事地</p>
+                         <p>对我说</p>
+                         <p>赫本是个好姑娘</p>
+                         <p>但是你</p>
+                         <p>给我好好吃饭</p>
+                        </div>
+                    </div>
+               </div>
+          </div>
           <div id="bai"></div>
      </div>
      <div id="zhaopian">
           <img src="oynan.jpeg" width="100%" height="100%"/>
-     </div>
-     <div id="xiaoshige">
-          <div class="inner">
-              <div class="innerwrapper" style="font-size:large">
-               <P>我吃了</P>
-               <P>放在</P>
-               <p>冰箱里的</p>
-               <P>梅子</P>
-               <p>它们</p>
-               <P>大概是你</P>
-               <p>留着早餐</p>
-               <p>吃的</p>
-               <p>请原谅</p>
-               <p>它们</p>
-               <p>实在是</p>
-               <p>太可口了</p>
-               <p>那么凉</p>
-               <p>又那么甜</p>
-              </div>
-              <div class="innerwrapper" style="font-size:large">
-               <P>她</P>
-               <P>这么美</P>
-               <p>这么一尘不染</p>
-               <P>她站在你面前</P>
-               <p>就像白云</p>
-               <P>在天空里</P>
-               <p>就像树叶</p>
-               <p>在阳光里</p>
-               <p>这么玲珑</p>
-               <p>这么剔透</p>
-               <p>你很难想象</p>
-               <p>她这么可爱</p>
-               <p>也不喜欢吃菠菜</p>
-              </div>
-              <div class="innerwrapper" style="font-size:large">
-               <P>我把手机里的</p>
-               <p>图片给姥姥看</P>
-               <P>奥黛丽•赫本在非洲</P>
-               <p>背着一个</p>
-               <p>瘦如骷髅的男孩</p>
-               <P>我告诉姥姥说</P>
-               <p>要拥有苗条的身材</p>
-               <P>就要把食物</p>
-               <p>分给饥饿的人</P>
-               <p>姥姥郑重其事地</p>
-               <p>对我说</p>
-               <p>赫本是个好姑娘</p>
-               <p>但是你</p>
-               <p>给我好好吃饭</p>
-              </div>
-          </div>
      </div>
 </body>
 </html>
