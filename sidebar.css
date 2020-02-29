@@ -164,23 +164,15 @@ ul {
      margin-left: 0px;
      margin-top: 0px;
      margin-bottom: 0px;
-     background-image: url(beijing.jpg);
+     background-image: url(maidou.jpg);
      background-size: 100% 100%;   
-}
-/*Å·ÑôÄÈÄÈÍ¼Æ¬*/
-#zhaopian{
-     width: 400px;
-     height: 600px;
-     position: absolute;
-     left: 236px;
-     top: 60px;
 }
 /*¿É°®µÄÐ¡Ê«¸è*/
 #xiaoshige{
      width: 200px;
      height: 600px;
      position:relative;
-     left: 20px;
+     left: 30px;
      top: 55px;
      overflow:hidden;
 }

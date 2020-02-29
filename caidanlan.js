@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
    // 侧边栏弹出
    $('button').click(function () {
       var left = $('#wrapper')[0].offsetLeft;
@@ -27,34 +27,34 @@ $(function () {
 
    // 鼠标触碰改变img样式
    var SRC = [{
-         src: 'images/home_1.png'
+         src: 'home_1.png'
       },
       {
-         src: 'images/works_1.png'
+         src: 'works_1.png'
       },
       {
-         src: 'images/release_1.png'
+         src: 'release_1.png'
       },
       {
-         src: 'images/collection_1.png'
+         src: 'collection_1.png'
       },
       {
-         src: 'images/setup_1.png'
+         src: 'setup_1.png'
       },
       {
-         src: 'images/home.png'
+         src: 'home.png'
       },
       {
-         src: 'images/works.png'
+         src: 'works.png'
       },
       {
-         src: 'images/release.png'
+         src: 'release.png'
       },
       {
-         src: 'images/collection.png'
+         src: 'collection.png'
       },
       {
-         src: 'images/setup.png'
+         src: 'setup.png'
       },
    ]
    $('.option ul>li').mouseenter(function () {
