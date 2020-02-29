@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+/*第一个整体页面*/
+#wrapper{
+     width: 100%;
+     height: 1000px;
+     transition: all 0.5s;
+}
+ul {
+    list-style: none;
+}
+/* 左侧菜单栏 */
+#wrapper .sidebar {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -220px;
+    bottom: 0;
+    background-color: #BE04A7;
+    overflow: hidden;
+}
+/* 菜单按钮 */
+#wrapper button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(../images/button.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    outline: none;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/* 头像 */
+.headSculpture {
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+}
+.headSculpture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+    transform: translate(0,-135px);
+    transition: all 1s;
+}
+.headSculpture .img{
+    transform: translate(0,0);
+}
+/* 昵称 */
+.headSculpture p {
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    background-color: pink;
+    border-radius: 15px;
+    color: #fff;
+    transform: translate(200px,0);
+    transition: all 1s;
+}
+/* 菜单选项卡 */
+.headSculpture .opacity{
+    transform: translate(0,0);
+}
+
+.option,
+.option ul li {
+    width: 100%;
+}
+
+.option ul {
+    padding: 15px 0;
+}
+
+.option ul li {
+    display: flex;
+    align-items: center;
+    width:195px;
+    margin-top: 15px;
+    padding-left:25px;
+    cursor: pointer;
+    color: #D0D1D7;
+    transform: translateZ(0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition: all 1s;
+}
+.option ul li:nth-child(1),.option ul li:nth-child(3),.option ul li:nth-child(5){
+    transform: translate(-200px,0);
+}
+.option ul li:nth-child(2),.option ul li:nth-child(4){
+    transform: translate(200px,0);
+}
+.sidebar .option ul li.li{
+    transform: translate(0,0);
+}
+.option ul li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: pink;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.option ul li:hover,
+.option ul li:focus,
+.option ul li:active {
+    color: #ffffff;
+}
+.option ul li:hover:before,
+.option ul li:focus:before,
+.option ul li:active:before {
+    transform: scaleX(1);
+}
+
+.option ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+.option ul li p {
+    width: 145px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+/* 右侧文字 */
+#hei{
+     width: 220px;
+     height: 1000px;
+     background-color:slategray;
+     float: right;
+}
+/* 中间背景 */
+#bai{
+     height: 1000px;
+     position: relative;
+     margin-right: 220px;
+     margin-left: 0px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     background-image: url(../beijing.jpg);
+     background-size: 100% 100%;   
+}
+/*欧阳娜娜图片*/
+#zhaopian{
+     width: 400px;
+     height: 600px;
+     position: absolute;
+     left: 236px;
+     top: 60px;
+}
+/*可爱的小诗歌*/
+#xiaoshige{
+     width: 200px;
+     height: 600px;
+     position:relative;
+     left: 20px;
+     top: 55px;
+     overflow:hidden;
+}
+/* 轮播特效 */
+.inner {
+	width:600px;
+	position:relative;
+	animation:zyb 15s linear 0s infinite;
+}
+@keyframes zyb {
+0% {
+	transform:translateX(0px);
+}
+30%{
+     transform:translateX(0px);
+}
+35% {
+	transform:translateX(-200px);
+}
+65% {
+	transform:translateX(-200px);
+}
+70% {
+	transform:translateX(-400px);
+}
+96% {
+	transform:translateX(-400px);
+}
+100%{
+     transform:translateX(0px);
+}
+}
+/* 鼠标停留文字停止轮播 */
+.inner:hover {
+	animation-play-state:paused;
+	cursor:pointer;
+}
+.innerwrapper {
+	float:left;
+	width:200px;
+    line-height: 40px;
+}
