@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <title>优秀的赵祎博，嘻嘻</title>
 <link rel="stylesheet" href="sidebar.css" type="text/css">
@@ -91,17 +91,5 @@
           </div>
           <div id="bai"></div>
      </div>
-     <script type="text/javascript">
-      //归约方法汇总学分
-      //array表示数组，combine表示累加函数，start表示初始值0，credit表示累计学分
-      function reduce(array, combine, start) {
-          let credit = start;
-          for (let element of array) {    //遍历数组
-              credit = combine(credit, element);  
-          }
-          return credit;
-      }
-      console.log(reduce([1, 0.2, 3.5, 2,2,2,2,2,4,2,2,4,2], (a, b) => a + b, 0));
-    </script>
 </body>
 </html>

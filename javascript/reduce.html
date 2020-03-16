@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归约函数</title>
+</head>
+<body>
+<script src="underscore.js"></script>
+<script type="text/javascript"> 
+var data=[
+        {name:'计算机安装与维护',credit:2},
+        {name:'静态网页制作',credit:2},
+        {name:'计算机编程基础',credit:4},
+        {name:'大学英语',credit:2},
+        {name:'软件技术导论',credit:2}
+];
+//reduce方法
+function reduce(array, combine, start) {
+var current = start;
+for (var element of array) {
+current = combine(current, element);
+}
+return current;
+} 
+
+data.stat={
+    "max":reduce(data,(a,b)=>a>b.credit?a:b.credit),
+    "min":reduce(data,(a,b)=>a<b.credit?a:b.credit),
+    "total":reduce(data,(a,b)=>a+b.credit,0)
+}
+console.log("我的课程学分最多的是"+data.stat.max);
+console.log("我的课程学分最少的是"+data.stat.min);
+console.log("我的课程总学分是"+data.stat.total);
+
+//underscore方法
+var stooges=data;
+console.log(_.max(stooges,(stooge)=>stooge.credit));
+</script>
+</body>
+</html>
