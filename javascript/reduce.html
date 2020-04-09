@@ -40,6 +40,7 @@ console.log(_.max(stooges,(stooge)=>stooge.credit));
 //第二次作业
 var value=11;
 var initvalue=22;
+//var initvalue=Number(prompt("请输入一个数"));
 
 function addition(){
     var value=initvalue;
@@ -55,5 +56,14 @@ func(33);
 func(44);
 console.log(initvalue);
 </script>
+<!--第三次作业--> 
+<ul id="zyb" type="disc"></ul>
+<script>
+    var list="";
+    for (var i=0;i<data.length;i++){
+      list+="<li>"+data[i].name+"(学分："+data[i].credit+")"+"</li>";
+    }
+    document.getElementById("zyb").innerHTML=list;
+ </script>   
 </body>
 </html>
