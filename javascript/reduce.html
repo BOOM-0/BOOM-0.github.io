@@ -7,6 +7,7 @@
 </head>
 <body>
 <script src="underscore.js"></script>
+<script src="jquery.min.js"></script>
 <script type="text/javascript"> 
 var data=[
         {name:'计算机安装与维护',credit:2},
@@ -59,11 +60,16 @@ console.log(initvalue);
 <!--第三次作业--> 
 <ul id="zyb" type="disc"></ul>
 <script>
-    var list="";
+/*  var list="";
     for (var i=0;i<data.length;i++){
       list+="<li>"+data[i].name+"(学分："+data[i].credit+")"+"</li>";
     }
-    document.getElementById("zyb").innerHTML=list;
+    document.getElementById("zyb").innerHTML=list;    */
+    $(function(){
+    _.each(data, function(item){
+        $("ul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
+    });
+    })
  </script>   
 </body>
 </html>
