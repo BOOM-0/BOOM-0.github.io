@@ -65,11 +65,19 @@ console.log(initvalue);
       list+="<li>"+data[i].name+"(学分："+data[i].credit+")"+"</li>";
     }
     document.getElementById("zyb").innerHTML=list;    */
+
+ </script>  
+ 
+ <!--第四次作业-->
+ <script>
     $(function(){
-    _.each(data, function(item){
+     $.get("./data.json",function(result) {   
+      // console.log(result);
+         _.each(result, function(item){
         $("ul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
-    });
+        });
+    });   
     })
- </script>   
+ </script>
 </body>
 </html>
