@@ -69,15 +69,25 @@ console.log(initvalue);
  </script>  
  
  <!--第四次作业-->
+  
  <script>
     $(function(){
      $.get("./data.json",function(result) {   
       // console.log(result);
          _.each(result, function(item){
         $("ul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
+        }); 
+        $("#btn").click(function(){
+        $.get("http://127.0.01:8585/CrditByName?name="+$("#coursename").val(), function(data){
+            alert(data);
         });
-    });   
+       })
+     });
     })
  </script>
+ <input id="coursename" />
+ <button id="btn">显示分数</button>
+ <div id="crditdiv"></div>
+
 </body>
 </html>
