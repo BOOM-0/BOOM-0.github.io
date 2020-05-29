@@ -83,6 +83,18 @@ console.log(initvalue);
         });
        })
      });
+
+     $("#btn").click(function()){
+     $.ajax({
+   type: "POST",
+   url: "http://localhost:8585/CrditByName",
+   data: JSON.stringify({name=$("coursename").val()}),
+   success: function(data){
+     $("#divcredit").text(data)
+      }
+     });
+    };
+    
     })
  </script>
  <input id="coursename" />
